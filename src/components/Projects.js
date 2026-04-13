@@ -10,7 +10,7 @@ const Projects = () => {
     const fetchRepos = async () => {
       try {
         // Replace 'octocat' with your GitHub username
-        const response = await fetch('https://api.github.com/users/octocat/repos?sort=updated&per_page=6');
+        const response = await fetch('https://api.github.com/users/Dhinesh0411/repos?sort=updated&per_page=6');
         if (!response.ok) {
           throw new Error('Failed to fetch repositories');
         }
