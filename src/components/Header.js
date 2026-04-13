@@ -1,20 +1,20 @@
 import React from 'react';
-import './Header.css';
+import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 
 const Header = () => {
   return (
-    <header className="header">
-      <nav className="nav">
-        <div className="nav-brand">
-          <h1>My Portfolio</h1>
-        </div>
-        <ul className="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <AppBar position="fixed" color="primary">
+      <Toolbar>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          Dhinesh's Portfolio
+        </Typography>
+        <Box>
+          <Button color="inherit" href="#about">About</Button>
+          <Button color="inherit" href="#projects">Projects</Button>
+          <Button color="inherit" href="#contact">Contact</Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
 
